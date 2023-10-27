@@ -1,2 +1,2 @@
 # Tiny Stars Foundation
-This is a project for the subject 'Programimi ne WWW', made by group 4.
+This is a website for a non-profit organization, aimed at supporting children all around the globe.
