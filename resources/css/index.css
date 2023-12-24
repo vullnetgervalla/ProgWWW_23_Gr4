@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home-bg-contaier {
+    background-image: url("../images/HomeBG.png");
+    background-size: cover;
+    position: absolute;
+    overflow: auto;
+    min-width: 100%;
+    max-height: 900px;
+}
+
+
+.home-title-container {
+    position: relative;
+    margin: 200px;
+    margin-bottom: 0;
+}
+
+.home-title-container > h1 {
+    color: white;
+    font-size: 82px;
+    font-weight: 700;
+    display: flex;
+    max-width: 860px;
+}
+
+.home-title-container > div > button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: white;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.home-title-container > div {
+    display: flex;
+    gap: 30px;
+}
+
+.home-title-play {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.home-title-footer {
+    margin-top: 200px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 24px;
+}
+
+.title-footer-seperator {
+    border-top: 1px solid white;
+    flex: 1;
+}
