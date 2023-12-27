@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--TEST-->
+
+<html>
+    <head>
+        <link rel="stylesheet" href="resources/project_edit.css">
+        <meta charset="utf-8">
+        <title>Event Read More | Tiny Stars Foundation</title>
+    </head>
+    <body>
+        <header>
+            <h1>Tiny Stars Foundation</h1>
+        <nav>
+            <div class="buttons">Home</div>
+            <div class="buttons">About Us</div>
+            <div class="buttons">What We Do</div>
+            <div class="buttons">Media</div>
+            <div class="buttons">Contact</div>
+            <div id="button">Donate</div>
+        </nav>
+        </header>
+        <div id="div2">
+            <h2>A day with our wonderful <span style="display: block;">children</span></h2>
+            <p><img src="location.png" width="50" height="50">Kosovë, Prishtinë</p>
+            <p><img src="date-time.png" width="50" height="50">
+                <div>
+                    <strong>Date:</strong> <span id="currentDate"></span>
+                </div>
+                <div>
+                    <strong>Time:</strong> <span id="currentTime"></span>
+                </div>
+            </p>
+        </div>
+        <div id="div3">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit nulla ullam ex debitis numquam
+                voluptatem omnis cupiditate facere officiis quasi blanditiis, molestiae natus similique non laborum! 
+                Officiis, magni accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rerum.
+                Dolor, accusantium expedita! Tempore autem obcaecati natus aspernatur odio nesciunt tenetur aperiam, 
+                laudantium ipsum, libero recusandae. Aperiam exercitationem beatae numquam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit nulla ullam ex debitis numquam
+                    voluptatem omnis cupiditate facere officiis quasi blanditiis, molestiae natus similique non laborum! 
+                    Officiis, magni accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rerum.
+                    Dolor, accusantium expedita! Tempore autem obcaecati natus aspernatur odio nesciunt tenetur aperiam, 
+                    laudantium ipsum, libero recusandae. Aperiam exercitationem beatae numquam?</p>
+                <div>
+                    <p><img src="photo.png" width="900" height="300"></p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed velit nulla ullam ex debitis numquam
+                    voluptatem omnis cupiditate facere officiis quasi blanditiis, molestiae natus similique non laborum! 
+                    Officiis, magni accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rerum.
+                    Dolor, accusantium expedita! Tempore autem obcaecati natus aspernatur odio nesciunt tenetur aperiam, 
+                    laudantium ipsum, libero recusandae. Aperiam exercitationem beatae numquam?</p>
+        </div>
+        <div id="div3">
+            <h1>Other Events</h1>
+            <div class="next-events">
+                Next Events
+            </div>
+            <div class="next-events">
+                Next Events
+            </div>
+        </div>
+        <div id="test">
+            <label class="login">Username</label><br/>
+            <input type="text" required>
+            <br>
+            <label class="login">Password</label><br/>
+            <input type="password" required>
+            <h2 class="login">Sign In</h2>
+        </div>
+    </body>
+    <script>
+        function updateDateTime() {
+            var currentDate = new Date();
+            var dateElement = document.getElementById("currentDate");
+            var timeElement = document.getElementById("currentTime");
+
+            dateElement.textContent = currentDate.toDateString();
+            timeElement.textContent = currentDate.toLocaleTimeString();
+        }
+        setInterval(updateDateTime, 1000);
+    </script>
+</html>
