@@ -3,16 +3,21 @@
 }
 
 #nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: fit-content;
   margin: 0;
   padding: 18px 7%;
-  font-family: 'Roboto', sans-serif;
   box-sizing: inherit;
-  height: fit-content;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.40);
   overflow: hidden;
+  z-index: 2;
 }
 
 h1, h2, h3, h4 {
@@ -21,8 +26,9 @@ h1, h2, h3, h4 {
 }
 
 #tittle {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 700;
+  font-style: bold;
   width: fit-content;
 }
 
@@ -33,7 +39,7 @@ h1, h2, h3, h4 {
   gap: 40px ;
   width: fit-content;
   padding: 16px 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-style: 500;
   width: fit-content;
   color: #525560;
@@ -45,7 +51,7 @@ h1, h2, h3, h4 {
 }
 
 #donate {
-  padding: 8px 12px;
+  padding: 12px 32px;
   border-radius: 4px;
   background: #1D2130;
   font-size: 16px;
