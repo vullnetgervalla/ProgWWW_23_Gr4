@@ -4,10 +4,12 @@
 
 body {
   box-sizing: inherit;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-main {
-  padding: 76px 110px 70px;
+p {
+  margin: 0;
+  padding: 0;
 }
