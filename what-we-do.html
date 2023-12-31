@@ -9,12 +9,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function() {
-           $("#navbar").load("components/navbar.html");
+           $("#navbar").load("components/navbar.html", function() {
+            $('#whatWeDo').addClass('active');
+        });
+           $("#footer").load("components/footer.html");
         });
     </script>
 </head>
 <body>
     <div id="navbar"></div>
+    
     <h1>What We Do</h1>
+
+    <div id="footer"></div>
 </body>
 </html>

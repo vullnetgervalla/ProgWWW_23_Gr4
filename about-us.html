@@ -18,7 +18,10 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script>
 			$(function () {
-				$('#navbar').load('components/navbar.html');
+				$('#navbar').load('components/navbar.html', function() {
+            $('#aboutUs').addClass('active');
+        });
+				$("#footer").load("components/footer.html");
 			});
 		</script>
 	</head>
@@ -34,18 +37,20 @@
 					<p id="pseudo-tittle">We are a non-governmental organization</p>
 					<div id="explanations">
 						<p id="highlighted">
-							Our mission is to provide cutting-edge solutions that empower businesses, fostering growth and driving the future of technology.
+							Empowering children in need, our non-profit organization provides essential resources, education, and nurturing support to foster growth and development.
 						</p>
 						<p id="normal">
-							With a team of dedicated professionals, we strive to understand the unique needs of each client, delivering tailored solutions that
-							bring their vision to life. We believe in the power of technology to create change and are committed to making a positive impact in the
-							industries we serve.
+							With a team of dedicated professionals, we strive to understand the unique needs of each child, delivering tailored support and resources that help them thrive. We believe in the power of education and care to create change and are committed to making a positive impact in the lives of the children we help.
 						</p>
 					</div>
 				</div>
 			</div>
 
 			<div id="video">
+				<video>
+					<source src="resources/images/about-us/ChildrenInGaza.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
 				<div id="circle">
 					<img
 						src="resources/images/about-us/Play.svg"
@@ -181,15 +186,15 @@
 						</p>
 						<div id="founding-stats">
 							<div class="stats">
-								<p class="numerical-stats">34M+</p>
+								<p class="numerical-stats" data-val="34">00M+</p>
 								<p class="text-stats">Donation Received</p>
 							</div>
 							<div class="stats">
-								<p class="numerical-stats">400+</p>
+								<p class="numerical-stats" data-val="400">00+</p>
 								<p class="text-stats">Volunteers</p>
 							</div>
 							<div class="stats">
-								<p class="numerical-stats">20+</p>
+								<p class="numerical-stats" data-val="20">00+</p>
 								<p class="text-stats">Care Homes</p>
 							</div>
 						</div>
@@ -202,6 +207,8 @@
 					</div>
 				</div>
 			</div>
+
+			<script src="resources/js/about-us.js"></script>
 
 			<div id="team">
 				<p id="team-title">Meet our team</p>
@@ -220,16 +227,19 @@
 						<p class="member-role">Cofounder, CEO</p>
 						<div class="member-social-media">
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/Facebook.svg"
-								alt=""
+								alt="Facebook"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/X.svg"
-								alt=""
+								alt="X"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/LinkedIn.svg"
-								alt=""
+								alt="LinkedIn"
 							/>
 						</div>
 					</div>
@@ -243,16 +253,19 @@
 						<p class="member-role">Vice Chairman</p>
 						<div class="member-social-media">
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/Facebook.svg"
-								alt=""
+								alt="Facebook"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/X.svg"
-								alt=""
+								alt="X"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/LinkedIn.svg"
-								alt=""
+								alt="LinkedIn"
 							/>
 						</div>
 					</div>
@@ -266,16 +279,19 @@
 						<p class="member-role">Head of Authority</p>
 						<div class="member-social-media">
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/Facebook.svg"
-								alt=""
+								alt="Facebook"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/X.svg"
-								alt=""
+								alt="X"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/LinkedIn.svg"
-								alt=""
+								alt="LinkedIn"
 							/>
 						</div>
 					</div>
@@ -289,16 +305,19 @@
 						<p class="member-role">Support Executive</p>
 						<div class="member-social-media">
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/Facebook.svg"
-								alt=""
+								alt="Facebook"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/X.svg"
-								alt=""
+								alt="X"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/LinkedIn.svg"
-								alt=""
+								alt="LinkedIn"
 							/>
 						</div>
 					</div>
@@ -312,16 +331,19 @@
 						<p class="member-role">Project Manager</p>
 						<div class="member-social-media">
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/Facebook.svg"
-								alt=""
+								alt="Facebook"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/X.svg"
-								alt=""
+								alt="X"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/LinkedIn.svg"
-								alt=""
+								alt="LinkedIn"
 							/>
 						</div>
 					</div>
@@ -335,16 +357,19 @@
 						<p class="member-role">Accountant, Finance</p>
 						<div class="member-social-media">
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/Facebook.svg"
-								alt=""
+								alt="Facebook"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/X.svg"
-								alt=""
+								alt="X"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/LinkedIn.svg"
-								alt=""
+								alt="LinkedIn"
 							/>
 						</div>
 					</div>
@@ -358,16 +383,19 @@
 						<p class="member-role">Cofounder, CEO</p>
 						<div class="member-social-media">
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/Facebook.svg"
-								alt=""
+								alt="Facebook"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/X.svg"
-								alt=""
+								alt="X"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/LinkedIn.svg"
-								alt=""
+								alt="LinkedIn"
 							/>
 						</div>
 					</div>
@@ -381,16 +409,19 @@
 						<p class="member-role">Vice Chairman</p>
 						<div class="member-social-media">
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/Facebook.svg"
-								alt=""
+								alt="Facebook"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/X.svg"
-								alt=""
+								alt="X"
 							/>
 							<img
+								class="team-social-media"
 								src="resources/images/about-us/LinkedIn.svg"
-								alt=""
+								alt="LinkedIn"
 							/>
 						</div>
 					</div>
@@ -438,7 +469,7 @@
 								<p>NEXT EVENTS</p>
 								<hr class="event-line" />
 							</div>
-							<div class="event-description">A day with our wonderful children</div>
+							<div class="event-description">Seminar: Caring for children with autism</div>
 						</div>
 						<button class="next-event">
 							<img src="resources/images/about-us/RightArrow.svg" alt="">
@@ -447,5 +478,7 @@
 				</div>
 			</div>
 		</main>
+
+		<div id="footer"></div>
 	</body>
 </html>
