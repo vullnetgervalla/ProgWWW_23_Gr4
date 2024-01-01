@@ -1,58 +1,74 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 #nav-container {
-  margin: 0;
-  padding: 18px 7%;
-  font-family: 'Roboto', sans-serif;
-  box-sizing: inherit;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.40);
-  overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: fit-content;
+	margin: 0;
+	padding: 18px 7%;
+	box-sizing: inherit;
+	font-family: 'Roboto', sans-serif;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+	z-index: 2;
 }
 
-/* h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-} */
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 0;
+}
 
 #tittle {
-  font-size: 20px;
-  font-weight: 700;
-  width: fit-content;
+	width: max-content;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 44px;
 }
 
-.nav-pages-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px ;
-  width: fit-content;
-  padding: 16px 20px;
-  font-size: 16px;
-  font-style: 500;
-  width: fit-content;
-  color: #525560;
+#nav-pages-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	width: fit-content;
+	padding: 16px 20px;
 }
 
 .nav-anchor {
-  text-decoration: none;
-  color: #525560;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #525560;
+	font-size: 16px;
+	font-weight: 500;
 }
+
+/* #home {
+	color: #0B0706;
+} */
 
 #donate {
-  padding: 8px 12px;
-  border-radius: 4px;
-  background: #1D2130;
-  font-size: 16px;
-  font-weight: 500;
-  color: white;
-  outline: none;
-  cursor: pointer;
-  border: none;
+	padding: 12px 32px;
+	border-radius: 4px;
+	background: #1d2130;
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	border: none;
 }
 
+.active {
+	font-family: 'Roboto', sans-serif;
+	color: #0B0706;
+	font-size: 16px;
+	font-weight: 500;
+}

@@ -11,6 +11,7 @@
 
 body {
   box-sizing: inherit;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -21,8 +22,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-main {
-  padding: 76px 110px 70px;
+p {
+  margin: 0;
+  padding: 0;
 }
 
 button {
