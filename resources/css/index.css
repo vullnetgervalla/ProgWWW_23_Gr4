@@ -1,22 +1,18 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .home-bg-contaier {
     background-image: url("../images/HomeBG.png");
     background-size: cover;
-    position: absolute;
-    overflow: auto;
+    overflow: hidden;
     min-width: 100%;
-    max-height: 900px;
+    height: 92vh;
 }
-
 
 .home-title-container {
     position: relative;
-    margin: 200px;
+    margin: 10%;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
 }
 
 .home-title-container > h1 {
@@ -24,7 +20,8 @@ body {
     font-size: 82px;
     font-weight: 700;
     display: flex;
-    max-width: 860px;
+    max-width: 50%;
+    margin-bottom: 4%;
 }
 
 .home-title-container > div > button {
@@ -52,7 +49,7 @@ body {
 }
 
 .home-title-footer {
-    margin-top: 200px;
+    margin-top: auto;
     margin-bottom: 60px;
     display: flex;
     align-items: center;
@@ -64,4 +61,225 @@ body {
 .title-footer-seperator {
     border-top: 1px solid white;
     flex: 1;
+}
+
+.know-about-us {
+    margin: 10% 7% 5%;
+}
+
+.know-about-us-main {
+    display: flex;
+    gap: 10%;
+}
+
+.section-title-text {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+
+.know-about-us-title{
+    margin: 10% 0 5% 0;
+}
+
+.know-about-us-text {
+    margin-left: 15%;
+    
+}
+
+.know-about-us-text > h3 {
+    font-size: 48px;
+    color: var(--primary-text);
+    margin-bottom: 40px;
+}
+
+.know-about-us-text > p {
+    font-size: 1em;
+    color: var(--secondary-text);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.know-about-us-image {
+    width: 35%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.support {
+    display: flex;
+    align-items: center;
+    margin-top: 96px;
+    gap: 10px;
+}
+
+.supporters-title {
+    font: 1em;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+
+.supporters-line {
+    flex: 1;
+    border-top: 1px solid #e5e5e5;
+}
+
+.supporters {
+	margin-top: 48px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.supporting-company {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+}
+
+.supporting-company img {
+	width: 25px;
+	height: 25px;
+	object-fit: contain;
+}
+
+.company-name {
+	font-size: 16px;
+	font-weight: 700;
+	color: #1d2130;
+	opacity: 0.7;
+	text-transform: uppercase;
+}
+
+.what-we-do {
+    padding: 1px 7% 5%;
+    background-color: var(--light-yellow);
+}
+
+.what-we-do-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what-we-do-title{
+    margin: 8% 0 2% 0;
+}
+
+.what-we-do-text {
+    margin-left: 7%;
+    width: 50%;
+}
+
+.what-we-do-text > h3 {
+    font-size: 48px;
+}
+
+.what-we-do-text > p {
+    font-size: 1em;
+    color: var(--secondary-text);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.what-we-do-list {
+    padding-left: 80px;
+    width: 70%;
+    list-style-type: none;
+    border-left: 2px solid var(--primary-text);
+}
+
+.what-we-do-list > li {
+    font-size: 1em;
+    color: var(--secondary-text);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.what-we-do-list > li > h4 {
+    font-size: 1.4em;
+    color: var(--primary-text);
+    line-height: 1.6;
+    display: inline;
+}
+
+.item-1::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    float: left;
+    top: 2px;
+    left: -40px;
+    background-image: url('../images/bullets/Icon1.svg');
+}
+
+.item-2::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    float: left;
+    top: 2px;
+    left: -40px;
+    background-image: url('../images/bullets/Icon2.svg');
+}
+
+.item-3::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    float: left;
+    top: 2px;
+    left: -40px;
+    background-image: url('../images/bullets/Icon3.svg');
+}
+
+.item-4::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    float: left;
+    top: 2px;
+    left: -40px;
+    background-image: url('../images/bullets/Icon4.svg');
+}
+
+.what-we-do-image{
+    width: 35%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 1400px) {
+
+    .home-title-container > h1 {
+        font-size: 56px;
+        max-width: 60%;
+    }
+
+    .home-title-footer{
+        font-size: 18px;
+    }
+
+    .know-about-us-text > h3 {
+        font-size: 36px;
+    }
+
+    .what-we-do-text > h3 {
+        font-size: 36px;
+    }
+    
+    .what-we-do-text > p {
+        width: 100%;
+    }
+
+    .what-we-do-list {
+        width: 100%
+    };
 }

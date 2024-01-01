@@ -1,3 +1,10 @@
+:root {
+  --primary-text: #1D2130;
+  --secondary-text: #525560;
+  --yellow: #F2C94C;
+  --light-yellow: #FCEDC6;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -7,6 +14,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -20,6 +32,22 @@ button {
   box-shadow: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
 .btn {
   padding: 16px 32px;
   text-decoration: none;
@@ -29,4 +57,20 @@ button {
   background-color: white;
   cursor: pointer;
   border-radius: 4px;
+  font-weight: 500;
+}
+
+.yellow-bg {
+  background-color: var(--yellow);
+}
+
+.blue-bg {
+  background-color: #1D2130;
+  color: white;
+}
+
+.span-line {
+  display: inline-block;
+  border-top: 2px solid var(--primary-text);
+  min-width: 92px;
 }
