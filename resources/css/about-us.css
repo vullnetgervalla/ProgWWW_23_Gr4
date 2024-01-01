@@ -7,7 +7,9 @@ main {
 }
 
 #header {
+	width: 100%;
 	height: fit-content;
+	display: flex;
 }
 
 #section-tittle {
@@ -19,7 +21,7 @@ main {
 
 #small-line {
 	margin: 0;
-	width: 7%;
+	width: 72px;
 	height: 2px;
 	border: none;
 	background: #1D2130;
@@ -33,13 +35,14 @@ main {
 
 #text {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	gap: 32px;
 }
 
 #pseudo-tittle {
 	margin: 0;
 	margin-left: 7%;
-	width: 58%;
+	width: 88%;
 	color: #1d2130;
 	font-size: 56px;
 	font-weight: 700;
@@ -47,12 +50,16 @@ main {
 }
 
 #explanations {
-	width: 38%;
+	margin-top: 52px;
+	width: 44.7%;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
 	color: #1d2130;
-	gap: 4px;
 }
 
 #explanations #highlighted {
+	width: 100%;
 	margin: 0;
 	font-size: 20px;
 	font-weight: 700;
@@ -60,6 +67,7 @@ main {
 }
 
 #explanations #normal {
+	width: 100%;
 	margin: 0;
 	font-size: 16px;
 	font-weight: 400;

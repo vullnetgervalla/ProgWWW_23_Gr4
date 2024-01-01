@@ -18,10 +18,10 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script>
 			$(function () {
-				$('#navbar').load('components/navbar.html', function() {
-            $('#aboutUs').addClass('active');
-        });
-				$("#footer").load("components/footer.html");
+				$('#navbar').load('components/navbar.html', function () {
+					$('#aboutUs').addClass('active');
+				});
+				$('#footer').load('components/footer.html');
 			});
 		</script>
 	</head>
@@ -29,26 +29,29 @@
 		<div id="navbar"></div>
 		<main>
 			<div id="header">
-				<div id="section-tittle">
-					<hr id="small-line" />
-					<p>KNOW ABOUT US</p>
-				</div>
 				<div id="text">
-					<p id="pseudo-tittle">We are a non-governmental organization</p>
-					<div id="explanations">
-						<p id="highlighted">
-							Empowering children in need, our non-profit organization provides essential resources, education, and nurturing support to foster growth and development.
-						</p>
-						<p id="normal">
-							With a team of dedicated professionals, we strive to understand the unique needs of each child, delivering tailored support and resources that help them thrive. We believe in the power of education and care to create change and are committed to making a positive impact in the lives of the children we help.
-						</p>
+					<div id="section-tittle">
+						<hr id="small-line" />
+						<p>KNOW ABOUT US</p>
 					</div>
+					<p id="pseudo-tittle">We are a non-governmental organization</p>
+				</div>
+				<div id="explanations">
+					<p id="highlighted">Empowering children in need, our non-profit organization provides essential resources and education.</p>
+					<p id="normal">
+						With a team of dedicated professionals, we strive to understand the unique needs of each child, delivering tailored support and resources
+						that help them thrive. We believe in the power of education and care to create change and are committed to making a positive impact in the
+						lives of the children we help.
+					</p>
 				</div>
 			</div>
 
 			<div id="video">
 				<video>
-					<source src="resources/images/about-us/ChildrenInGaza.mp4" type="video/mp4">
+					<source
+						src="resources/images/about-us/ChildrenInGaza.mp4"
+						type="video/mp4"
+					/>
 					Your browser does not support the video tag.
 				</video>
 				<div id="circle">
@@ -186,15 +189,30 @@
 						</p>
 						<div id="founding-stats">
 							<div class="stats">
-								<p class="numerical-stats" data-val="34">00M+</p>
+								<p
+									class="numerical-stats"
+									data-val="34"
+								>
+									00M+
+								</p>
 								<p class="text-stats">Donation Received</p>
 							</div>
 							<div class="stats">
-								<p class="numerical-stats" data-val="400">00+</p>
+								<p
+									class="numerical-stats"
+									data-val="400"
+								>
+									00+
+								</p>
 								<p class="text-stats">Volunteers</p>
 							</div>
 							<div class="stats">
-								<p class="numerical-stats" data-val="20">00+</p>
+								<p
+									class="numerical-stats"
+									data-val="20"
+								>
+									00+
+								</p>
 								<p class="text-stats">Care Homes</p>
 							</div>
 						</div>
@@ -456,7 +474,10 @@
 							<div class="event-description">A day with our wonderful children</div>
 						</div>
 						<button class="next-event">
-							<img src="resources/images/about-us/RightArrow.svg" alt="">
+							<img
+								src="resources/images/about-us/RightArrow.svg"
+								alt=""
+							/>
 						</button>
 					</div>
 					<div class="event">
@@ -472,7 +493,10 @@
 							<div class="event-description">Seminar: Caring for children with autism</div>
 						</div>
 						<button class="next-event">
-							<img src="resources/images/about-us/RightArrow.svg" alt="">
+							<img
+								src="resources/images/about-us/RightArrow.svg"
+								alt=""
+							/>
 						</button>
 					</div>
 				</div>
