@@ -38,7 +38,7 @@ function createModal() {
                 We are always looking for volunteers to help us with our mission. If you are interested in volunteering,
                 please fill out the form below and we will get back to you as soon as possible.
             </p>
-            <form>
+            <form action="https://formspree.io/f/xdorzqer" method="POST">
                 <table class="form-table">
                     <tr class="first-row">
                         <td>
