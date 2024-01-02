@@ -1,9 +1,9 @@
 .home-bg-contaier {
-    background-image: url("../images/HomeBG.png");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../images/home/HappyChildren.jpeg");
     background-size: cover;
     overflow: hidden;
     min-width: 100%;
-    height: 92vh;
+    height: 100vh;
 }
 
 .home-title-container {
@@ -15,16 +15,16 @@
     height: 80%;
 }
 
-.home-title-container > h1 {
+.home-title-container>h1 {
     color: white;
     font-size: 82px;
     font-weight: 700;
     display: flex;
-    max-width: 50%;
+    width: 50%;
     margin-bottom: 4%;
 }
 
-.home-title-container > div > button {
+.home-title-container>div>button {
     padding: 8px 12px;
     border-radius: 4px;
     background: white;
@@ -33,7 +33,7 @@
     color: white;
 }
 
-.home-title-container > div {
+.home-title-container>div {
     display: flex;
     gap: 30px;
 }
@@ -64,7 +64,7 @@
 }
 
 .know-about-us {
-    margin: 10% 7% 5%;
+    margin: 5% 7% 5%;
 }
 
 .know-about-us-main {
@@ -77,24 +77,24 @@
     font-weight: 700;
     letter-spacing: 2px;
     margin-left: 30px;
+    color: var(--primary-text);
 }
 
-.know-about-us-title{
+.know-about-us-title {
     margin: 10% 0 5% 0;
 }
 
 .know-about-us-text {
     margin-left: 15%;
-    
 }
 
-.know-about-us-text > h3 {
+.know-about-us-text>h3 {
     font-size: 48px;
     color: var(--primary-text);
     margin-bottom: 40px;
 }
 
-.know-about-us-text > p {
+.know-about-us-text>p {
     font-size: 1em;
     color: var(--secondary-text);
     line-height: 1.6;
@@ -116,8 +116,8 @@
 
 .supporters-title {
     font: 1em;
-	font-weight: 500;
-	letter-spacing: 2px;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .supporters-line {
@@ -126,30 +126,30 @@
 }
 
 .supporters {
-	margin-top: 48px;
-	display: flex;
-	justify-content: space-between;
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .supporting-company {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
 }
 
 .supporting-company img {
-	width: 25px;
-	height: 25px;
-	object-fit: contain;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
 }
 
 .company-name {
-	font-size: 16px;
-	font-weight: 700;
-	color: #1d2130;
-	opacity: 0.7;
-	text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1d2130;
+    opacity: 0.7;
+    text-transform: uppercase;
 }
 
 .what-we-do {
@@ -162,7 +162,7 @@
     justify-content: space-between;
 }
 
-.what-we-do-title{
+.what-we-do-title {
     margin: 8% 0 2% 0;
 }
 
@@ -171,11 +171,12 @@
     width: 50%;
 }
 
-.what-we-do-text > h3 {
+.what-we-do-text>h3 {
     font-size: 48px;
+    color: var(--primary-text);
 }
 
-.what-we-do-text > p {
+.what-we-do-text>p {
     font-size: 1em;
     color: var(--secondary-text);
     line-height: 1.6;
@@ -190,7 +191,7 @@
     border-left: 2px solid var(--primary-text);
 }
 
-.what-we-do-list > li {
+.what-we-do-list>li {
     font-size: 1em;
     color: var(--secondary-text);
     line-height: 1.6;
@@ -198,7 +199,7 @@
     position: relative;
 }
 
-.what-we-do-list > li > h4 {
+.what-we-do-list>li>h4 {
     font-size: 1.4em;
     color: var(--primary-text);
     line-height: 1.6;
@@ -249,37 +250,372 @@
     background-image: url('../images/bullets/Icon4.svg');
 }
 
-.what-we-do-image{
+.what-we-do-image {
     width: 35%;
     border-radius: 20px;
     object-fit: cover;
 }
 
+.projects {
+    margin: 5% 7% 5%;
+}
+
+.projects-title {
+    margin-left: 7.5%;
+    font-size: 48px;
+    color: var(--primary-text);
+    width: 50%;
+}
+
+.project-cards-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 55vh;
+    gap: 50px;
+}
+
+.project-card {
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 7% 5% 4% 5%;
+}
+
+.project-card>h4 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.project-card>p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.project-card>a {
+    color: black;
+    width: fit-content;
+    margin-top: auto;
+}
+
+.card-1 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../images/home/children.jpeg');
+}
+
+.card-2 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../images/home/project2.jpeg');
+}
+
+.card-3 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../images/home/project3.jpeg');
+}
+
+.donations {
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    padding: 7% 10%;
+    background-color: black;
+    color: white;
+}
+
+.donations-text {
+    margin: 5% 0;
+}
+
+.donations-text>h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.donations-text>p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    opacity: 0.6;
+    margin-bottom: 40px;
+}
+
+.donations-percentage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.donations-percentage>span {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.block-bullet {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.lightgreen {
+    background-color: #BEF3C0;
+}
+
+.lightpurple {
+    background-color: #AC94F1;
+}
+
+.lightyellow {
+    background-color: #FFF0CA;
+}
+
+.yellow {
+    background-color: #F9CF64;
+}
+
+.lightred {
+    background-color: #F38FBF;
+}
+
+.donations>img {
+    width: 30%;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.contribute {
+    margin: 5% 7% 5%;
+}
+
+.contribute-image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50vh;
+}
+
+.contribute-image-container>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 70%;
+    border-radius: 20px;
+    filter: brightness(0.6);
+}
+
+.contribute-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+}
+
+.contribute-overlay-text>h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    color: white;
+}
+
+.contribute-overlay-text>div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.events {
+    margin: 5% 7% 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.events-title {
+    color: var(--primary-text);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.future-events {
+    display: flex;
+    gap: 2%;
+}
+
+.event {
+    width: 48%;
+    padding: 2.5% 3.7% 3.1% 3.1%;
+    border-radius: 20px;
+    background: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-date {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: start;
+}
+
+.event-day {
+    height: fit-content;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    color: var(--primary-text);
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.event-month {
+    width: 100%;
+    color: var(--primary-text);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.event-info {
+    width: 60.6%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.top-event {
+    display: flex;
+    align-items: center;
+    gap: 6.2%;
+}
+
+.top-event p {
+    color: var(--primary-text);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.event-line {
+    width: 11%;
+    height: 2px;
+    margin: 0;
+    border: none;
+    background: var(--primary-text);
+}
+
+.event-description {
+    color: var(--primary-text);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.next-event {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
 
 @media (max-width: 1400px) {
 
-    .home-title-container > h1 {
+    .home-title-container>h1 {
         font-size: 56px;
         max-width: 60%;
     }
 
-    .home-title-footer{
+    .home-title-footer {
         font-size: 18px;
     }
 
-    .know-about-us-text > h3 {
+    .know-about-us-text>h3 {
         font-size: 36px;
     }
 
-    .what-we-do-text > h3 {
+    .what-we-do-text>h3 {
         font-size: 36px;
     }
-    
-    .what-we-do-text > p {
+
+    .what-we-do-text>p {
         width: 100%;
     }
 
     .what-we-do-list {
         width: 100%
-    };
+    }
+
+    .projects-title {
+        font-size: 36px;
+        width: 50%;
+    }
+
+    .project-card {
+        padding: 5% 4% 3% 4%;
+    }
+
+    .project-card>h4 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .project-card>p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .donations {
+        padding: 5% 7%;
+        gap: 10%;
+    }
+
+    .donations-text>h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .donations-text>p {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .donations-percentage>span {
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500;
+    }
+
+    .contribute-overlay-text>h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .events-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .event-description {
+        font-size: 24px;
+    }
 }

@@ -12,7 +12,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
-            $("#navbar").load("components/navbar.html");
+            $('#navbar').load('components/navbar.html', function () {
+                $('#home').addClass('active');
+            });
+            $('#footer').load('components/footer.html');
         });
     </script>
 </head>
@@ -68,7 +71,7 @@
                     </a>
                 </div>
             </div>
-            <img src="resources/images/homeImg2.png" alt="Kids in a park" class="know-about-us-image">
+            <img src="resources/images/home/KidsAtPark.png" alt="Kids in a park" class="know-about-us-image">
         </div>
         <div class="support">
             <h4 class="supporters-title">
@@ -174,11 +177,154 @@
                 </div>
                 <img
                     class="what-we-do-image" 
-                    src="resources/images/homeImg3.jpeg"
+                    src="resources/images/home/BoyHeadphones.jpeg"
                     alt="Young boy listening to music">
             </div>
         </div>
     </div>
+    <div class="projects">
+        <div class="flex flex-align-center what-we-do-title">
+            <span class="span-line"></span>
+            <h2 class="section-title-text">
+                PROJECTS WE HAVE DONE
+            </h2>
+        </div>
+        <h3 class="projects-title">
+            We are creating a place where children with special needs can thrive
+        </h3>
+        <div class="project-cards-container">
+            <div class="project-card card-1">
+                <h4>
+                    Mission smile 1k: Outdoor charity
+                </h4>
+                <p>
+                    We organized a charity event to raise funds for our children. The event was a huge success, and we
+                    were able to raise $1000.
+                </p>
+                <a class="btn" href="what-we-do.html">Learn more</a>
+            </div>
+            <div class="project-card card-2">
+                <h4>
+                    Weekly excursions
+                </h4>
+                <p>
+                    We organize weekly excursions for our children to help them explore the world around them. We
+                    believe that these excursions help our children learn and grow.
+                </p>
+                <a class="btn" href="what-we-do.html">Learn more</a>
+            </div>
+            <div class="project-card card-3">
+                <h4>
+                    Monthly public awareness
+                </h4>
+                <p>
+                    We organize monthly public awareness campaigns to raise awareness about important social issues.
+                    These campaigns help us spread our message and reach more people.
+                </p>
+                <a class="btn" href="what-we-do.html">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="donations">
+        <div class="donations-text">
+            <h2>
+                How we spend your donations and where it goes
+            </h2>
+            <p>
+                We are committed to transparency and accountability. We want you to know how your donations are
+                spent. Here is a breakdown of how we spend your donations.
+            </p>
+            <div class="donations-percentage">
+                <span>
+                    <span class="block-bullet lightgreen"></span>
+                    40% child care home
+                </span>
+                <span>
+                    <span class="block-bullet lightpurple"></span>
+                    35% cleanliness program
+                </span>
+                <span>
+                    <span class="block-bullet lightyellow"></span>
+                    10% helping people
+                </span>
+                <span>
+                    <span class="block-bullet yellow"></span>
+                    10% excursions
+                </span>
+                <span>
+                    <span class="block-bullet lightred"></span>
+                    5% feeding the poor
+                </span>
+            </div>
+        </div>
+        <img src="resources/images/home/Chart.png" alt="Chart">
+    </div>
+    <div class="contribute">
+        <div class="contribute-image-container">
+            <img src="resources/images/home/children.jpeg" alt="Children">
+            <div class="contribute-overlay-text">
+                <h2>
+                    You can contribute to provide a place for children with special needs
+                </h2>
+                <div>
+                    <a href="#" class="btn yellow-bg">Join as a volunteer</a>
+                    <a href="donate.html" class="btn">Donate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="events">
+        <h2 class="events-title">Our Events</h2>
+        <div class="future-events">
+            <div class="event">
+                <div class="event-date">
+                    <p class="event-day">13</p>
+                    <p class="event-month">apr</p>
+                </div>
+                <div class="event-info">
+                    <div class="top-event">
+                        <p>NEXT EVENTS</p>
+                        <hr class="event-line" />
+                    </div>
+                    <div class="event-description">
+                        A day with our wonderful children
+                    </div>
+                </div>
+                <a href="events.html">
+                    <button class="next-event">
+                        <img
+                            src="resources/images/about-us/RightArrow.svg"
+                            alt="Next event"
+                        />
+                    </button>
+                </a>
+            </div>
+            <div class="event">
+                <div class="event-date">
+                    <div class="event-day">13</div>
+                    <div class="event-month">apr</div>
+                </div>
+                <div class="event-info">
+                    <div class="top-event">
+                        <p>NEXT EVENTS</p>
+                        <hr class="event-line" />
+                    </div>
+                    <div class="event-description">
+                        Seminar: Caring for children with autism
+                    </div>
+                </div>
+                <a href="events.html">
+                    <button class="next-event">
+                        <img
+                            src="resources/images/about-us/RightArrow.svg"
+                            alt="Next event"
+                        />
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
 </body>
 
 </html>
