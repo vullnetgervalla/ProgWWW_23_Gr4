@@ -67,7 +67,7 @@ button {
 }
 
 .blue-bg {
-  background-color: #1D2130;
+  background-color: var(--primary-text);
   color: white;
 }
 

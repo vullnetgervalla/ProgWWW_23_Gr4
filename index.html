@@ -31,8 +31,8 @@
                 <a href="what-we-do.html" class="btn">
                     What we do
                 </a>
-                <span class="home-title-play">
-                    <img src="resources/images/Play icon.svg" alt="play">
+                <span id="mainVideo" class="home-title-play">
+                    <img src="resources/images/home/Play icon.svg" alt="play">
                     Play video
                 </span>
             </div>
@@ -43,6 +43,9 @@
             </div>
         </div>
     </div>
+
+    <script src="resources/js/home.js"></script>
+    
     <div class="know-about-us">
         <div class="know-about-us-main">
             <div class="know-about-us-content">
@@ -267,14 +270,17 @@
                     You can contribute to provide a place for children with special needs
                 </h2>
                 <div>
-                    <a href="#" class="btn yellow-bg">Join as a volunteer</a>
+                    <a id="volunteerButton" class="btn yellow-bg">Join as a volunteer</a>
                     <a href="donate.html" class="btn">Donate</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="events">
-        <h2 class="events-title">Our Events</h2>
+        <div class="flex flex-align-center">
+            <h2 class="events-title">Our Events</h2>
+            <div class="events-line"></div>
+        </div>
         <div class="future-events">
             <div class="event">
                 <div class="event-date">
@@ -325,6 +331,8 @@
         </div>
     </div>
     <div id="footer"></div>
+    
+    <script src="resources/js/formModal.js"></script>
 </body>
 
 </html>
