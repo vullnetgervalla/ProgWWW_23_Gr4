@@ -12,11 +12,9 @@ video.addEventListener('pause', () => {
 	playButton.style.display = 'flex';
 });
 
-const valueToDisplay = document.querySelectorAll('.numerical-stats');
 const interval = 2500;
-
-const observer = new IntersectionObserver((entries) => {
-	entries.forEach((value) => {
+const observer = new IntersectionObserver((e) => {
+	e.forEach((value) => {
 		if (value.isIntersecting) {
 			let startValue = 0;
 			const endValue = parseInt(value.target.getAttribute('data-val'));
@@ -36,6 +34,18 @@ const observer = new IntersectionObserver((entries) => {
 	});
 });
 
-valueToDisplay.forEach((value) => {
+document.querySelectorAll('.numerical-stats').forEach((value) => {
 	observer.observe(value);
 });
+
+const teamObserver = new IntersectionObserver((e) => {
+	e.forEach((value) => {
+		if (value.isIntersecting) {
+			value.target.classList.add('animate-team-up');
+		}
+	});
+});
+
+document.querySelectorAll('.member').forEach((value) => {
+	teamObserver.observe(value);
+})
