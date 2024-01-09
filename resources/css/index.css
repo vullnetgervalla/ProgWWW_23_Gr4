@@ -459,10 +459,6 @@
 }
 
 .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 40%;
     height: 85%;
     background-color: white;
@@ -470,13 +466,16 @@
     padding: 3% 4%;
 }
 
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .close-canvas {
-    position: absolute;
-    top: 0;
-    right: 0;
+    align-self: flex-start;
     width: 50px;
     height: 50px;
-    margin: 35px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -486,7 +485,7 @@
     background: var(--primary-text);
 }
 
-.modal-content>h2 {
+.modal-header>h2 {
     display: inline-block;
     position: relative;
     font-size: 48px;
@@ -772,7 +771,7 @@
         font-size: 24px;
     }
 
-    .modal-content>h2 {
+    .modal-header>h2 {
         font-size: 36px;
         margin-bottom: 30px;
     }

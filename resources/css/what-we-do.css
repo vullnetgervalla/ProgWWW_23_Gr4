@@ -304,6 +304,12 @@ main {
 	padding: 3% 4%;
 }
 
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .close-canvas {
 	position: absolute;
 	top: 0;

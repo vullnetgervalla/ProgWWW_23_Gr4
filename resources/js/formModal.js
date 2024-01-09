@@ -30,10 +30,12 @@ function createModal() {
     modal.id = 'form-modal'
     modal.innerHTML = `
         <div id="form-modal-content"  class="modal-content">
-            <canvas id="closeCanvas" class="close-canvas"></canvas>
-            <h2>
-                Join our team of volunteers!
-            </h2>
+            <div class="modal-header">
+                <h2>
+                    Join our team of volunteers!
+                </h2>
+                <canvas id="closeCanvas" class="close-canvas"></canvas>
+            </div>
             <p>
                 We are always looking for volunteers to help us with our mission. If you are interested in volunteering,
                 please fill out the form below and we will get back to you as soon as possible.
