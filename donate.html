@@ -34,13 +34,13 @@
                                 needs-an investment in the leaders of tomorrow</p>
                         </div>
                         <div>
-                            <button id="Donate-now">Donate now</button>
+                            <a href="donate.html" id="Donate-now">Donate now</a>
                         </div>
                     </td>
                 </div>
                     <td>
                         <div id="imageDiv">
-                            <img src="resources/images/projects/Donate.svg" alt="">
+                            <img id="donateImage" src="resources/images/projects/Donate.svg" alt="">
                         </div>
                     </td>
                 </tr>
@@ -57,15 +57,15 @@
                     development of our kids.</p>
             </div>
             <div id="secondDiv">
-                <table>
+                <table id="table1">
                     <tr>
-                        <td style="width: 20%;"><b>Overview</b></td>
-                        <td style="width: 20%;">Impact</td>
-                        <td style="width: 20%;">What You Get</td>
+                        <td><button class="buttons" id="buttonOveriew">Overview</button></td>
+                        <td><button class="buttons" id="buttonImpact"> Impact</button></td>
+                        <td><button class="buttons" id="buttonWhatYouGet">What You Get</button></td>
                     </tr>
-                </table>
-                <hr id="horizontalRow"/>
-                <div id="Overview">
+                </table>                
+                
+                <div id="divOverview" class="content-div">
                     <p id="normal">Contribute to caring for our kids by volunteering your time in engaging and educational activities, 
                         fostering a positive impact on their well-being. Financial support ensures essential resources for education 
                         and healthcare initiatives. Join us in building a compassionate community that prioritizes the happiness and 
@@ -74,9 +74,67 @@
                         participating in advocacy campaigns, you become a vital voice for the welfare of our kids. Together, 
                         we create a supportive network focused on providing the best opportunities for their growth and happiness.</p>
                 </div>
+                <div id="divImpact" class="content-div" style="display: none;">
+                    <p id="normal">Explore the 'Impact' section to witness the tangible outcomes of your generosity. Your support 
+                        funds crucial educational programs, empowering children with special needs for a brighter future. Additionally, 
+                        it plays a pivotal role in ensuring essential healthcare initiatives, promoting their overall well-being. Your 
+                        commitment creates positive change, fostering a compassionate community that prioritizes their happiness 
+                        and development.</p><br/>
+                    <p id="normal">Discover the impact of your generosity, from empowering education to ensuring healthcare access. 
+                        Your involvement extends beyond financial support; it's a dedication to shaping a brighter and more equitable 
+                        future for children with special needs.</p>
+                </div>
+                <div id="divWhatYouGet" class="content-div" style="display: none;">
+                    <p id="normal">In the 'What You Get' section, we express gratitude for your essential role in supporting children. 
+                        Your contributions provide a profound sense of fulfillment, knowing you're a crucial part of a network dedicated to their well-being. 
+                        By spreading awareness and participating in advocacy, you become a vital voice for their welfare.</p><br/>
+                    <p id="normal">Explore the 'What You Get' section to understand the impactful role you play. Your involvement extends beyond 
+                        financial support, creating a supportive environment focused on providing the best opportunities for their growth 
+                        and happiness. Join us on this empowering journey, where your voice becomes a catalyst for positive change in the lives of 
+                        these incredible children.</p>
+                </div>
             </div>
-        </div>        
-
+        </div>    
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const buttons = document.querySelectorAll('.buttons');
+                const divs = {
+                    'buttonOveriew': document.getElementById('divOverview'),
+                    'buttonImpact': document.getElementById('divImpact'),
+                    'buttonWhatYouGet': document.getElementById('divWhatYouGet')
+                };
+        
+                function highlightButton(buttonId) {
+                    // Remove 'highlighted' class from all buttons
+                    buttons.forEach(btn => btn.classList.remove('highlighted'));
+                    // Add 'highlighted' class to the clicked button
+                    document.getElementById(buttonId).classList.add('highlighted');
+                }
+        
+                function showDivContent(buttonId) {
+                    // Hide all divs
+                    for (const id in divs) {
+                        divs[id].style.display = 'none';
+                    }
+                    // Show the content of the specified div
+                    divs[buttonId].style.display = 'block';
+                }
+        
+                // Initially show the content of the 'Overview' div and hide others
+                showDivContent('buttonOveriew');
+                // Highlight the 'Overview' button by default
+                highlightButton('buttonOveriew');
+        
+                buttons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const buttonId = button.id;
+                        highlightButton(buttonId);
+                        showDivContent(buttonId);
+                    });
+                });
+            });
+        </script>
+    
         <div id="main-div3">
             <p id="pseudo-title">How we use your donation</p>
             <p id="normal1">Your donation is crucial to our commitment to children's well-being, funding educational 
@@ -87,11 +145,15 @@
                 to ensuring healthcare access. We're deeply grateful for your commitment to shaping a brighter future for 
                 the children under our care.</p>
         </div>
-        <div id="imageDiv2">
-            <p id="pseudo-title1">You can contribute to providing a place for children with special needs</p>
-            <div id="buttonContainer">
+        <div id="contribute">
+            <p id="contribute-text">You can contribute to provide a place for children with special needs</p>
+            <div id="join-us">
                 <button id="volunteerButton" class="join-volunteer">Join as a volunteer</button>
-                <button id="Donate">Donate</button>
+                <a
+                    href="donate.html"
+                    id="donate-nav"
+                    >Donate</a
+                >
             </div>
         </div>
         <script src="resources/js/formModal.js"></script>
