@@ -1,10 +1,3 @@
-#footer-container {
-	width: 100%;
-	height: 402px;
-	padding: 96px 7%;
-	background: #000;
-	display: flex;
-}
 
 #footer-title {
 	width: max-content;
@@ -57,18 +50,15 @@
 	cursor: pointer;
 }
 
+.footer-links:hover {
+	opacity: 1;
+}
+
 #footer-subscribe {
 	margin-left: 11%;
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
-}
-
-#subscribe-text {
-	color: #fff;
-	font-size: 40px;
-	font-weight: 700;
-	line-height: 140%;
 }
 
 #subscribe-input-container {

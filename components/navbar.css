@@ -13,7 +13,11 @@
 	align-items: center;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 	overflow: hidden;
-	z-index: 2;
+	z-index: 3;
+}
+
+#tittle::before {
+	content: "Tiny Stars Foundation";
 }
 
 #tittle {
@@ -23,6 +27,12 @@
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 44px;
+	cursor: pointer;
+	transition: 0.4s ease-out;
+}
+
+#tittle:hover {
+	transform: scale(1.2);
 }
 
 #nav-pages-container {
@@ -40,11 +50,12 @@
 	color: #525560;
 	font-size: 16px;
 	font-weight: 500;
+	transition: 0.2s ease-out;
 }
 
-/* #home {
-	color: #0B0706;
-} */
+.links:hover {
+	transform: scale(1.2);
+}
 
 #donate {
 	padding: 12px 32px;

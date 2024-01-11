@@ -6,7 +6,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Document</title>
+		<title>Events | Tiny Stars Foundation</title>
 		<link
 			rel="stylesheet"
 			href="resources/css/events.css"
@@ -15,7 +15,7 @@
 		<script>
 			$(function () {
 				$('#navbar').load('components/navbar.html');
-				$("#footer").load("components/footer.html");
+				$('#footer').load('components/footer.html');
 			});
 		</script>
 	</head>
@@ -27,7 +27,12 @@
 				<h1>A day with our wonderful<br />children</h1>
 				<div id="firstDiv1">
 					<p class="location-time"><img src="resources/images/events/LocationPointer.svg" />Prishtinë - Kosovë</p>
-					<p class="location-time"><img src="resources/images/events/Calendar.svg" />27/12/2023 - 9:40 PM</p>
+					<p
+						class="location-time"
+						id="firstDiv1-time"
+					>
+						<img src="resources/images/events/Calendar.svg" />27/12/2023 - 9:40 PM
+					</p>
 				</div>
 			</div>
 			<div id="secondDiv">
@@ -105,5 +110,25 @@
 		</main>
 
 		<div id="footer"></div>
+
+		<script>
+			let intervalId = setInterval(() => {
+				let date = new Date();
+				let day = String(date.getDate()).padStart(2, '0');
+				let month = String(date.getMonth() + 1).padStart(2, '0');
+				let year = date.getFullYear();
+
+				let hours = date.getHours();
+				let minutes = String(date.getMinutes()).padStart(2, '0');
+				let ampm = hours >= 12 ? 'PM' : 'AM';
+				hours = hours % 12;
+				hours = hours ? hours : 12;
+
+				let strTime = hours + ':' + minutes + ' ' + ampm;
+				let strDate = day + '/' + month + '/' + year;
+
+				document.getElementById('firstDiv1-time').textContent = strDate + ' - ' + strTime;
+			}, 500);
+		</script>
 	</body>
 </html>

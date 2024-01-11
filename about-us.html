@@ -24,6 +24,14 @@
 				$('#footer').load('components/footer.html');
 			});
 		</script>
+		<script
+			src="resources/js/formModal.js"
+			defer
+		></script>
+		<script
+			src="resources/js/about-us.js"
+			defer
+		></script>
 	</head>
 	<body>
 		<div id="navbar"></div>
@@ -47,7 +55,10 @@
 			</div>
 
 			<div id="video">
-				<video>
+				<video
+					width="100%"
+					height="100%"
+				>
 					<source
 						src="resources/images/about-us/ChildrenInGaza.mp4"
 						type="video/mp4"
@@ -57,7 +68,7 @@
 				<div id="circle">
 					<img
 						src="resources/images/about-us/Play.svg"
-						alt=""
+						alt="Play button"
 					/>
 				</div>
 			</div>
@@ -219,14 +230,12 @@
 					</div>
 					<div id="our-team">
 						<img
-							src="resources/images/about-us/OurTeam.png"
+							src="resources/images/about-us/OurTeam.jpg"
 							alt=""
 						/>
 					</div>
 				</div>
 			</div>
-
-			<script src="resources/js/about-us.js"></script>
 
 			<div id="team">
 				<p id="team-title">Meet our team</p>
@@ -238,7 +247,7 @@
 					<div class="member">
 						<img
 							class="member-image"
-							src="resources/images/about-us/LeonardJohnDavies.png"
+							src="resources/images/about-us/LeonardJohnDavies.jpg"
 							alt=""
 						/>
 						<p class="member-name">Leonard John Davies</p>
@@ -264,7 +273,7 @@
 					<div class="member">
 						<img
 							class="member-image"
-							src="resources/images/about-us/FrancisWeber.png"
+							src="resources/images/about-us/FrancisWeber.jpg"
 							alt=""
 						/>
 						<p class="member-name">Francis Weber</p>
@@ -290,7 +299,7 @@
 					<div class="member">
 						<img
 							class="member-image"
-							src="resources/images/about-us/KylaObrien.png"
+							src="resources/images/about-us/KylaObrien.jpg"
 							alt=""
 						/>
 						<p class="member-name">Kyla Obrien</p>
@@ -316,7 +325,7 @@
 					<div class="member">
 						<img
 							class="member-image"
-							src="resources/images/about-us/AdrianDixon.png"
+							src="resources/images/about-us/AdrianDixon.jpg"
 							alt=""
 						/>
 						<p class="member-name">Adrian Dixon</p>
@@ -342,7 +351,7 @@
 					<div class="member">
 						<img
 							class="member-image"
-							src="resources/images/about-us/FreddyBusby.png"
+							src="resources/images/about-us/FreddyBusby.jpg"
 							alt=""
 						/>
 						<p class="member-name">Freddy Busby</p>
@@ -368,7 +377,7 @@
 					<div class="member">
 						<img
 							class="member-image"
-							src="resources/images/about-us/DaleBanks.png"
+							src="resources/images/about-us/DaleBanks.jpg"
 							alt=""
 						/>
 						<p class="member-name">Dale Banks</p>
@@ -394,7 +403,7 @@
 					<div class="member">
 						<img
 							class="member-image"
-							src="resources/images/about-us/MiriamMiddleton.png"
+							src="resources/images/about-us/MiriamMiddleton.jpg"
 							alt=""
 						/>
 						<p class="member-name">Miriam Middleton</p>
@@ -420,7 +429,7 @@
 					<div class="member">
 						<img
 							class="member-image"
-							src="resources/images/about-us/EllenWalton.png"
+							src="resources/images/about-us/EllenWalton.jpg"
 							alt=""
 						/>
 						<p class="member-name">Ellen Walton</p>
@@ -449,7 +458,12 @@
 			<div id="contribute">
 				<p id="contribute-text">You can contribute to provide a place for children with special needs</p>
 				<div id="join-us">
-					<button id="volunteerButton" class="join-volunteer">Join as a volunteer</button>
+					<button
+						id="volunteerButton"
+						class="join-volunteer"
+					>
+						Join as a volunteer
+					</button>
 					<a
 						href="donate.html"
 						id="donate-nav"
@@ -457,8 +471,6 @@
 					>
 				</div>
 			</div>
-
-			<script src="resources/js/formModal.js"></script>
 
 			<div id="events-section">
 				<p id="events-title">Our Events</p>
@@ -475,16 +487,18 @@
 							</div>
 							<div class="event-description">A day with our wonderful children</div>
 						</div>
-						<button class="next-event">
-							<img
-								src="resources/images/about-us/RightArrow.svg"
-								alt=""
-							/>
-						</button>
+						<a href="events.html">
+							<button class="next-event">
+								<img
+									src="resources/images/about-us/RightArrow.svg"
+									alt=""
+								/>
+							</button>
+						</a>
 					</div>
 					<div class="event">
 						<div class="event-date">
-							<div class="event-day">13</div>
+							<div class="event-day">25</div>
 							<div class="event-month">apr</div>
 						</div>
 						<div class="event-info">
@@ -494,12 +508,13 @@
 							</div>
 							<div class="event-description">Seminar: Caring for children with autism</div>
 						</div>
-						<button class="next-event">
-							<img
-								src="resources/images/about-us/RightArrow.svg"
-								alt=""
-							/>
-						</button>
+						<a href="events.html"
+							><button class="next-event">
+								<img
+									src="resources/images/about-us/RightArrow.svg"
+									alt=""
+								/></button
+						></a>
 					</div>
 				</div>
 			</div>
