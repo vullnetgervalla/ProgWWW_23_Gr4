@@ -33,7 +33,7 @@ main {
 	background: #1d2130;
 }
 
-#section-tittle > p {
+#section-tittle>p {
 	color: #1d2130;
 	font-size: 16px;
 	font-weight: 700;
@@ -76,7 +76,7 @@ main {
 	gap: 64px;
 }
 
-#whatWeDoSection > p {
+#whatWeDoSection>p {
 	color: #1d2130;
 	font-size: 48px;
 	font-weight: 700;
@@ -128,7 +128,7 @@ main {
 	padding-top: 56px;
 }
 
-#projects-section > p {
+#projects-section>p {
 	margin: 32px 0 0 7.5%;
 	width: 54%;
 }
@@ -154,10 +154,15 @@ main {
 }
 
 #project-1 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/global/Children.png');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/global/children.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#project-1:hover {
+	transform: scale(1.05);
 }
 
 #project-2 {
@@ -165,6 +170,11 @@ main {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#project-2:hover {
+	transform: scale(1.05);
 }
 
 #project-3 {
@@ -172,6 +182,11 @@ main {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#project-3:hover {
+	transform: scale(1.05);
 }
 
 .project-title {
@@ -218,7 +233,7 @@ main {
 	height: 384px;
 	flex-shrink: 0;
 	border-radius: 20px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/global/Children.png');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/global/children.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -290,13 +305,10 @@ main {
 	background-color: rgba(0, 0, 0, 0.8);
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .modal-content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	width: 40%;
 	height: 85%;
 	background-color: white;
@@ -305,18 +317,15 @@ main {
 }
 
 .modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .close-canvas {
-	position: absolute;
-	top: 0;
-	right: 0;
+	align-self: flex-start;
 	width: 50px;
 	height: 50px;
-	margin: 35px;
 	border-radius: 5px;
 	border: none;
 	cursor: pointer;
@@ -326,7 +335,7 @@ main {
 	background: var(--primary-text);
 }
 
-.modal-content > h2 {
+.modal-header>h2 {
 	display: inline-block;
 	position: relative;
 	font-size: 48px;
@@ -337,7 +346,7 @@ main {
 	width: 80%;
 }
 
-.modal-content > p {
+.modal-content>p {
 	font-size: 1em;
 	line-height: 1.6;
 	color: #525560;
@@ -355,7 +364,7 @@ main {
 	gap: 5%;
 }
 
-.first-row > td {
+.first-row>td {
 	flex: 1;
 }
 
@@ -366,7 +375,7 @@ main {
 	opacity: 0.6;
 }
 
-.modal-content input:not([type='submit']) {
+.modal-content input:not([type="submit"]) {
 	height: 30px;
 	width: 100%;
 	font-size: 1em;
@@ -400,7 +409,7 @@ main {
 	border-color: #000;
 }
 
-.modal-content input[type='submit'] {
+.modal-content input[type="submit"] {
 	width: 100%;
 	height: 50px;
 	font-size: 1em;
@@ -456,7 +465,6 @@ main {
 }
 
 .event-date {
-	align-self: flex-start;
 	display: flex;
 	flex-direction: column;
 	height: fit-content;
@@ -531,15 +539,25 @@ main {
 	align-items: center;
 	justify-content: center;
 	background: #fff;
+	transition: all 0.3s ease;
+}
+
+.next-event:hover {
+	box-shadow: 0 0 3px #FFF inset, 0 0 3px #FFF;
+	background: #000;
+}
+
+.next-event:hover > img {
+	filter: brightness(0) saturate(100%) invert(91%) sepia(100%) saturate(0%) hue-rotate(265deg) brightness(102%) contrast(105%);
 }
 
 @media (max-width: 1400px) {
-	.modal-content > h2 {
+	.modal-header>h2 {
 		font-size: 36px;
 		margin-bottom: 30px;
 	}
 
-	.modal-content > p {
+	.modal-content>p {
 		font-size: 0.9em;
 	}
 
@@ -549,7 +567,7 @@ main {
 	}
 }
 
-@media (max-height: 800px) {
+@media(max-height: 800px) {
 	.modal-content {
 		overflow-y: scroll;
 	}
