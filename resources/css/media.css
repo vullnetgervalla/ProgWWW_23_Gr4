@@ -390,7 +390,7 @@
         font-size: 16px;
     }
     .news-list {
-        overflow: auto;
+        overflow: scroll;
     }
     .news-card {
         padding: 20px;
@@ -444,5 +444,11 @@
 @media(max-height: 800px) {
     .modal-content {
         overflow-y: scroll;
+    }
+}
+
+@media(max-height: 950px) {
+    .news-list {
+        overflow: scroll;
     }
 }
