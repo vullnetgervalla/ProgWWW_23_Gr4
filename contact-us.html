@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/css/global.css">
+    <link rel="stylesheet" href="resources/css/contact-us.css">
     <title>Contact Us | Tiny Stars Foundation</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -17,9 +18,88 @@
 </head>
 <body>
     <div id="navbar"></div>
-    
-    <h1>Contact Us</h1>
-
+    <div class="contact-header">
+        <div class="contact-main">
+            <div class="flex flex-align-center top-news-title">
+                <span class="span-line"></span>
+                <h2 class="section-title-text">
+                    CONTACT US
+                </h2>
+            </div>
+            <div class="contact-text">
+                <h1>
+                    We'd love to hear from you
+                </h1>
+                <p>
+                    Have any question in mind or want to enquire? Please feel free to contact us through the form or the following details.
+                </p>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-info-section">
+                <h2>Lets talk!</h2>
+                <div class="flex flex-align-center flex-justify-center" style="gap: 30px;">
+                    <a href="tel:+38344837231">+383 44 837 231</a>
+                    <a href="mailto:contact@tinystars.com">contact@tinystars.com</a>
+                </div>
+            </div>
+            <div class="contact-info-section">
+                <h2>Headoffice</h2>
+                <span>8 Brewery Drive, Lagos, Nigeria.</span>
+            </div>
+            <div class="contact-info-section">
+                <h2>Branch Office</h2>
+                <span>Prishtinë, Kosovë.</span>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <form action="https://formspree.io/f/xdorzqer" method="POST">
+            <table class="form-table">
+                <tr class="table-row">
+                    <td>
+                        <div class="flex flex-column">        
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>                                    
+                    </td>
+                    <td>
+                        <div class="flex flex-column">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td>
+                        <div class="flex flex-column">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flex flex-column">
+                            <label for="subject">Subject</label>
+                            <input type="subject" id="subject" name="subject">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="third-row">
+                    <td colspan="2">
+                        <div class="flex flex-column">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Type your Message"></textarea>
+                        </div>        
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Send message">
+        </form>
+    </div>
+    <script src="resources/js/formValidator.js"></script>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.6545553031924!2d21.141269312111508!3d42.64748277104733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549f11047a3e0f%3A0x7ddc54978b1dca5f!2sGjimnazi%20i%20Specializuar%20Matematikor!5e0!3m2!1sen!2s!4v1704935956755!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <div id="footer"></div>
 </body>
 </html>
