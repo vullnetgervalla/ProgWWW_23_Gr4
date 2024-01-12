@@ -54,7 +54,7 @@
 }
 
 .links:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 #donate {
@@ -74,4 +74,5 @@
 	color: #0B0706;
 	font-size: 16px;
 	font-weight: 500;
+	border-bottom: 2px solid #000;
 }

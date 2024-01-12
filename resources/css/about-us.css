@@ -632,12 +632,18 @@ main {
 	gap: 48px;
 }
 
-#events-title {
+.events-title {
 	text-align: left;
 	color: #1d2130;
-	font-size: 40px;
-	font-weight: 500;
-	line-height: 140%;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.events-line {
+	flex: 1;
+	border-top: 2px solid var(--primary-text);
+	margin-left: 20px;
 }
 
 #future-events {
@@ -769,6 +775,10 @@ main {
 	.modal-content {
 		height: 95%;
 		width: 50%;
+	}
+
+	.events-title {
+		font-size: 40px;
 	}
 }
 
